@@ -1,6 +1,6 @@
 import React from "react";
 
-const UserItems = () => {
+const UserItem = () => {
   return (
     <div to="/profile" className="flex gap-2 my-5 items-center ">
       <div className=" overflow-hidden border-brand rounded-full">
@@ -14,4 +14,4 @@ const UserItems = () => {
   );
 };
 
-export default UserItems;
+export default UserItem;

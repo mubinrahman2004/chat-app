@@ -2,7 +2,7 @@ import { getDatabase, ref, onValue, push } from "firebase/database";
 import React, { useEffect, useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import ChatItems from "./ChatItems";
-import UserItems from "./UserItems";
+import UserItem from "./UserItem";
 
 const ChatList = () => {
   const [modal, setModal] = useState(false);
@@ -55,7 +55,7 @@ const ChatList = () => {
          <div className="h-95 w-sm overflow-y-auto">
              {
               userList.map((item)=>(
-                <UserItems key={item.id}/>
+                <UserItem key={item.id}/>
                 
               ))
             }
