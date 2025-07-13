@@ -12,7 +12,7 @@
   "routes": [
     {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "dest": "/index.html"
     }
   ]
 }
