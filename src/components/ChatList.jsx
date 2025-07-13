@@ -1,8 +1,8 @@
 import { getDatabase, ref, onValue, push } from "firebase/database";
 import React, { useEffect, useState } from "react";
 import { CiSearch } from "react-icons/ci";
-import ChatItems from "./ChatItems";
 import UserItem from "./UserItem";
+import ChatItem from "./ChatItem";
 
 const ChatList = () => {
   const [modal, setModal] = useState(false);
@@ -35,15 +35,19 @@ const ChatList = () => {
         <input className="outline-0" type="text" placeholder="search" />
       </div>
       <div className="mt-10 h-full overflow-scroll ">
-        <ChatItems />
-        <ChatItems />
-        <ChatItems />
-        <ChatItems />
-        <ChatItems />
-        <ChatItems />
-        <ChatItems />
-        <ChatItems />
-        <ChatItems />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+        <ChatItem />
+   
       </div>
       {modal && (
         <div className="fixed h-screen top-0 left-0 flex items-center  justify-center w-full z-10 bg-[#0f0e0e9d]">

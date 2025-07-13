@@ -1,6 +1,6 @@
 import React from "react";
 
-const ChatItems = () => {
+const ChatItem = () => {
   return (
    <>
     <div to="/profile" className="flex gap-2 my-5 items-center  cursor-pointer">
@@ -17,4 +17,4 @@ const ChatItems = () => {
   );
 };
 
-export default ChatItems;
+export default ChatItem;
